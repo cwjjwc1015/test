@@ -11,9 +11,29 @@
   gtag('config', 'G-HSCKZKR8G2');
 </script>
 <title>HomePage</title>
+  <script>
+    function shareFB(){
+      alert("已經分享到 FB");
+      gtag("event", "分享", {
+      	"article_title": "我的文章",
+      	"social_platform": "Facebook"
+      });
+
+    }
+    function shareLine(){
+      alert("已經分享到 Line");
+      gtag("event", "分享", {
+      	"article_title": "我的文章",
+      	"social_platform": "Line"
+      });
+      
+    }
+  </script>
 </head>
 
 <body>
+<button onclick="shareFB()">分享到 FB</button>
+<button onclick="shareLine()">分享到 Line</button>
 Hello Google Analytices<br/>
 <a href="https://instagram.com/">Instargam</a>
 <br/>
